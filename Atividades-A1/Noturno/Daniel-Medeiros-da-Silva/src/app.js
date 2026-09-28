@@ -21,6 +21,18 @@ app.get("/produtos", (req, res) => {
     res.json(produtos);
 });
 
+// GET /produtos/:id - Retorna um produto específico
+app.get("/produtos/:id", (req, res) => {
+    const idProduto = parseInt(req.params.id); // converte o id para numero
+    const produto = produtos.find((p) => p.id === idProduto);
+
+    if (!produto) {
+        return res.status(404).json({ erro: "produto não encontrado" });
+    }
+
+    res.status(200).json(produto);
+})
+
 // POST /produtos - Adiciona um novo produto
 app.post("/produtos", (req, res) => {
     // Valida a descricao
@@ -43,7 +55,7 @@ app.post("/produtos", (req, res) => {
     res.status(201).json(novoProduto); // Retorna 201
 });
 
-// DELETE /produtos/:id - deleta um produto da lista
+// DELETE /produtos/:id - Deleta um produto
 app.delete("/produtos/:id", (req, res) => {
     const idProduto = parseInt(req.params.id); // converte o id para numero
     const index = produtos.findIndex((p) => p.id === idProduto);
@@ -57,6 +69,7 @@ app.delete("/produtos/:id", (req, res) => {
     res.status(204).send(); // 204 no content
 });
 
+// PUT /produtos/:id - Modifica um produto
 app.put("/produtos/:id", (req, res) => {
     const idProduto = parseInt(req.params.id); // converte o id para numero
     const index = produtos.findIndex((p) => p.id === idProduto);  
