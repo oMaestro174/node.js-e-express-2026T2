@@ -19,12 +19,13 @@ Antes de começar, garanta que você tenha as seguintes ferramentas instaladas:
 - **[Git](https://git-scm.com/):** Controle de versão para clonar este repositório e enviar suas atividades.
 - **[Visual Studio Code](https://code.visualstudio.com/):** Editor de código recomendado.
 - **[Postman](https://www.postman.com/downloads/) ou [Insomnia](https://insomnia.rest/):** Para testar as requisições HTTP da nossa API.
+- **[PostgreSQL](https://www.postgresql.org/) e [DBeaver](https://dbeaver.io/):** Banco de dados relacional e cliente gráfico para consultas SQL.
 
 ---
 
 ## 📂 Estrutura do Repositório
 
-- **`AulaXX/`**: Contém o guia teórico (`README.md`), o roteiro de prática (`laboratorio.md`) e os códigos de exemplo (`src/`) de cada aula ministrada.
+- **`AulaXX/`**: Contém o guia teórico (`README.md`), o roteiro de prática (`laboratorio.md`) e atividades (`atividades.md`) de cada aula ministrada.
 - **`labNode1/`**: Laboratório prático da evolução do servidor HTTP nativo até a necessidade do Express.
 - **`Atividades-A1/`**: Orientações e pastas destinadas para entrega das avaliações práticas via Pull Request.
 - **`fundamentos-js-para-express.md`**: Guia preparatório de conceitos essenciais de JavaScript moderno para o Express.
@@ -34,7 +35,7 @@ Antes de começar, garanta que você tenha as seguintes ferramentas instaladas:
 
 ## 🗺️ Roteiro de Aulas
 
-Os materiais serão publicados gradualmente conforme o avanço das aulas:
+Os materiais são publicados gradualmente conforme o avanço das aulas:
 
 | Aula   | Tópico Principal                          | Status e Link                          |
 | :----- | :---------------------------------------- | :------------------------------------- |
@@ -43,21 +44,23 @@ Os materiais serão publicados gradualmente conforme o avanço das aulas:
 | **03** | Introdução ao Express e Primeiro Servidor | [Disponível](./Aula03/README.md)       |
 | **04** | Middlewares no Express                    | [Disponível](./Aula04/README.md)       |
 | **05** | Bancos de Dados com PostgreSQL            | [Disponível](./Aula05/README.md)       |
-| **06** | Conexão da API com PostgreSQL             | *(Disponibilizado após a aula)*        |
-| **07** | Operações CRUD Completas                  | *(Disponibilizado após a aula)*        |
+| **06** | Conexão da API com PostgreSQL             | [Disponível](./Aula06/README.md)       |
+| **07** | Princípios de APIs RESTful e Refatoração  | [Disponível](./Aula07/README.md)       |
 | **08** | Autenticação com JWT                      | *(Disponibilizado após a aula)*        |
 | **09** | Arquitetura MVC e Refatoração             | *(Disponibilizado após a aula)*        |
 | **10** | Documentação de APIs com Swagger          | *(Disponibilizado após a aula)*        |
 
 ---
 
-## 📝 Avaliação A1 — Atividade Prática
+## 🎯 Avaliação A1 — Atividade Prática
 
 A avaliação **A1** já está disponível para envio! Esta atividade prática consolida todo o conteúdo estudado até a **Aula 04** (módulos, Express, métodos HTTP, parâmetros e middlewares).
 
 * **Como fazer:** Escolha um dos níveis de desafio (Básico, Intermediário, Avançado ou Jedi), desenvolva a solução e envie via Fork e Pull Request.
 * 👉 **Consulte as instruções completas de entrega:** [Guia de Entrega da Avaliação A1](./Atividades-A1/README.md)
 * 💡 **Dúvidas frequentes de Git/GitHub:** [Guia de Resolução de Problemas (Troubleshooting)](./Atividades-A1/TROUBLESHOOTING.md)
+
+---
 
 ## 💡 Como Usar este Repositório
 
@@ -70,9 +73,13 @@ cd node.js-e-express-2026T2
 ### 2. Navegar até a aula desejada
 Entre na pasta da aula para consultar a teoria e executar os exemplos:
 ```bash
-cd Aula03
-node src/index.js
+cd Aula06
+# Consulte o roteiro do laboratorio.md
 ```
 
 ### 3. Sincronizar com atualizações
 Sempre que novas aulas forem publicadas pelo professor, consulte o guia [como-sincronizar-alteracoes.md](./como-sincronizar-alteracoes.md) para puxar as novidades para sua máquina com segurança.
+
+---
+**Instituto de Tecnologia e Aprendizado Moderno - ITEAM**  
+*Bons estudos e mãos no código!*
