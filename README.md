@@ -26,6 +26,7 @@ Antes de começar, garanta que você tenha as seguintes ferramentas instaladas:
 ## 📂 Estrutura do Repositório
 
 - **`AulaXX/`**: Contém o guia teórico (`README.md`), o roteiro de prática (`laboratorio.md`) e atividades (`atividades.md`) de cada aula ministrada.
+- 🗄️ **`database/schema.sql`**: Script SQL oficial unificado para criar todas as tabelas (`users`, `tasks`, `produtos`) e dados de teste no PostgreSQL/DBeaver.
 - **`labNode1/`**: Laboratório prático da evolução do servidor HTTP nativo até a necessidade do Express.
 - **`Atividades-A1/`**: Orientações e pastas destinadas para entrega das avaliações práticas via Pull Request.
 - **`fundamentos-js-para-express.md`**: Guia preparatório de conceitos essenciais de JavaScript moderno para o Express.
