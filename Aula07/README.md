@@ -1,5 +1,14 @@
 # Aula 07: Princípios de APIs RESTful
 
+> ### 📦 Dependências da Aula
+> Esta aula foca no design e padrão RESTful com Express. Se estiver em uma pasta separada, instale o framework:
+> ```powershell
+> npm init -y
+> npm install express
+> ```
+
+---
+
 ## Material Complementar
 
 Antes de começar, recomendamos assistir a estes vídeos para uma excelente introdução visual aos conceitos de API e REST:

@@ -1,5 +1,14 @@
 # Aula 04: Middlewares no Express
 
+> ### 📦 Dependências da Aula
+> Esta aula dá continuidade à API Express. Se estiver criando os arquivos em uma pasta separada:
+> ```powershell
+> npm init -y
+> npm install express
+> ```
+
+---
+
 ## Visão geral
 
 Esta aula aprofunda o uso do Express.js com foco em **middlewares**, um dos recursos mais importantes para organizar o fluxo de requisição e resposta em aplicações Node.js.

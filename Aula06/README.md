@@ -1,6 +1,15 @@
 # Aula 06: Integração BD + CRUD
 Conectando Node.js ao Banco de Dados e Implementando o CRUD 
 
+> ### 📦 Dependências da Aula
+> Nesta aula conectamos a API Express ao PostgreSQL. Se estiver iniciando em uma pasta separada, instale os pacotes necessários:
+> ```powershell
+> npm init -y
+> npm install express pg dotenv
+> ```
+
+---
+
 ## Visão geral
 
 Na aula anterior, construímos a fundação do nosso banco de dados com PostgreSQL. Agora, é hora de conectar nossa aplicação Node.js a esse banco e substituir nossos dados em memória por operações de banco de dados reais e persistentes. Vamos implementar o CRUD (Create, Read, Update, Delete) completo para a nossa API de gerenciamento de tarefas.

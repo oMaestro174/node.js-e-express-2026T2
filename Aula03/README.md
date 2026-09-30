@@ -1,5 +1,14 @@
 # Aula 03 - Introdução ao Express.js
 
+> ### 📦 Dependências da Aula
+> Se você estiver criando esta aula em uma nova pasta, inicialize o projeto e instale o Express:
+> ```powershell
+> npm init -y
+> npm install express
+> ```
+
+---
+
 Chegou a hora de construir nosso primeiro servidor web! Nesta aula, vamos usar o **Express.js**, o framework mais popular do ecossistema Node.js, para criar uma API de forma rápida e organizada.
 
 ## Objetivos da Aula

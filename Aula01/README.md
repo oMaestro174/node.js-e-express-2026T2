@@ -1,5 +1,11 @@
 # Aula 01 - Introdução ao Node.js e Configuração do Ambiente
 
+> ### 📦 Dependências da Aula
+> Esta aula utiliza **exclusivamente módulos nativos do Node.js** (`fs`, `path`, `http`).  
+> **Não é necessário rodar `npm install`** para instalar pacotes externos nesta aula.
+
+---
+
 Bem-vindo à primeira aula! Hoje vamos entender o que é o Node.js, por que ele é tão poderoso e como preparar seu computador para começar a desenvolver.
 
 ## Objetivos da Aula

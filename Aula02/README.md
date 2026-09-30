@@ -1,5 +1,14 @@
 # Aula 02 - Módulos e Gerenciamento de Pacotes com NPM
 
+> ### 📦 Dependências da Aula
+> Se você estiver criando esta aula em uma nova pasta, inicialize o projeto e instale a biblioteca de datas:
+> ```powershell
+> npm init -y
+> npm install date-fns
+> ```
+
+---
+
 Na aula anterior, você executou seu primeiro script. Agora, vamos aprender a organizar nosso código em partes menores e reutilizáveis, chamadas **módulos**, e a usar o **NPM** para gerenciar as dependências do nosso projeto.
 
 ## Objetivos da Aula

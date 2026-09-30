@@ -1,5 +1,11 @@
 # Aula 05: Introdução a Bancos de Dados com PostgreSQL
 
+> ### 📦 Dependências da Aula
+> Esta aula é focada na **modelagem e criação do banco de dados relacional** utilizando **PostgreSQL e DBeaver**.  
+> **Não é necessário instalar pacotes npm nesta etapa** — a conexão do Node.js com o banco será feita na Aula 06.
+
+---
+
 ## Visão geral
 
 Até agora, nossa API armazenava dados em memória, o que significa que eles eram perdidos toda vez que o servidor reiniciava. Nesta aula, vamos dar o primeiro passo para tornar nossos dados persistentes, introduzindo o conceito de bancos de dados e aprendendo a modelar e criar tabelas com **PostgreSQL**, um dos sistemas de gerenciamento de banco de dados relacional (SGBD) mais poderosos e populares do mundo.
