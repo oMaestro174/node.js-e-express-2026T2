@@ -47,7 +47,7 @@ Os materiais são publicados gradualmente conforme o avanço das aulas:
 | **05** | Bancos de Dados com PostgreSQL            | [Disponível](./Aula05/README.md)       |
 | **06** | Conexão da API com PostgreSQL             | [Disponível](./Aula06/README.md)       |
 | **07** | Princípios de APIs RESTful e Refatoração  | [Disponível](./Aula07/README.md)       |
-| **08** | Autenticação com JWT                      | *(Disponibilizado após a aula)*        |
+| **08** | Documentação de APIs com Swagger e Postman | [Disponível](./Aula08/README.md)       |
 | **09** | Arquitetura MVC e Refatoração             | *(Disponibilizado após a aula)*        |
 | **10** | Documentação de APIs com Swagger          | *(Disponibilizado após a aula)*        |
 
