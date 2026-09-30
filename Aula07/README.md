@@ -52,7 +52,11 @@ A base de uma API RESTful é a interação com recursos através de URIs e méto
 ### Recursos e URIs
 
 - **Recurso:** É qualquer "coisa" na sua aplicação (um usuário, um produto, um pedido).
-- **URI:** É o "endereço" do recurso.
+- **URI (Uniform Resource Identifier):** É o identificador único do recurso na API (ex: `/produtos/1` ou `/tasks`).
+- **URL (Uniform Resource Locator):** É o endereço completo com protocolo e servidor (ex: `http://localhost:3000/produtos/1`).
+- **Payload:** É a "carga útil", ou seja, os dados reais enviados no corpo da requisição (`req.body`), como no `POST`, `PUT` ou `PATCH`.
+
+> 📘 **Vocabulário Essencial:** Consulte o [Guia de Termos Essenciais em APIs (URI, URL, Payload e Headers)](../docs/termos-essenciais-apis.md) para ver analogias práticas e entender esses termos a fundo.
 
 **Boas Práticas para URIs:**
 
