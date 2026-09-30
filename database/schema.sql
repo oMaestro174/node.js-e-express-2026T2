@@ -110,8 +110,8 @@ VALUES (
     'Professor ITEAM',
     'professor',
     'professor@iteam.edu.br',
-    '$2a$10$r9jLp3YhE8z9fB7rW5Zc4s9Yq0oM1.uM1XbB9E3s5zB9fB7rW5Zc4',
-    '$2a$10$r9jLp3YhE8z9fB7rW5Zc4s9Yq0oM1.uM1XbB9E3s5zB9fB7rW5Zc4'
+    '$2b$10$lrXiGHCot604f7spHCfW4OX.EBx9xPa.DQtTBavN3iBhZWiiJm68m',
+    '$2b$10$lrXiGHCot604f7spHCfW4OX.EBx9xPa.DQtTBavN3iBhZWiiJm68m'
 )
 ON CONFLICT (email) DO NOTHING;
 
