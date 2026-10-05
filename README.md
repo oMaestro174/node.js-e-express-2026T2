@@ -29,6 +29,7 @@ Antes de começar, garanta que você tenha as seguintes ferramentas instaladas:
 - 🗄️ **`database/schema.sql`**: Script SQL oficial unificado para criar todas as tabelas (`users`, `tasks`, `produtos`) e dados de teste no PostgreSQL/DBeaver.
 - **`labNode1/`**: Laboratório prático da evolução do servidor HTTP nativo até a necessidade do Express.
 - **`Atividades-A1/`**: Orientações e pastas destinadas para entrega das avaliações práticas via Pull Request.
+- 🚀 **[Guia Oficial: Como Entregar Atividades via Fork e Pull Request](./docs/guia-passo-a-passo-fork-e-pull-request.md)**: Passo a passo ilustrado para clonar seu fork, criar sua branch e enviar seus trabalhos com registro oficial no GitHub.
 - **`fundamentos-js-para-express.md`**: Guia preparatório de conceitos essenciais de JavaScript moderno para o Express.
 - **`como-sincronizar-alteracoes.md`**: Guia passo a passo de como atualizar seu repositório local sem perder suas alterações.
 
