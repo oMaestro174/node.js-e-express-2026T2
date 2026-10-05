@@ -47,6 +47,32 @@ Adotamos o fluxo de **Fork & Pull Request (PR)** porque:
 
 ---
 
+
+---
+
+## ⚙️ Pré-requisito Obrigatório: Ter o Git Instalado e Configurado
+
+Antes de rodar qualquer comando no seu terminal, certifique-se de que você tem o **Git instalado** na sua máquina:
+
+1. **Como verificar se já está instalado:**  
+   Abra seu terminal (PowerShell, Prompt de Comando ou Git Bash) e digite:
+   ```bash
+   git --version
+   ```
+   *Se aparecer algo como `git version 2.x.x`, você já está pronto para continuar!*
+
+2. **Se não tiver instalado:**  
+   Acesse o site oficial [git-scm.com](https://git-scm.com/downloads) e baixe a versão para o seu sistema operacional (Windows, macOS ou Linux). Durante a instalação, pode manter as opções padrão recomendadas.
+
+3. **Configuração Inicial do Git (apenas na primeira vez):**  
+   Configure seu nome e o **mesmo e-mail que você usa na sua conta do GitHub**, para que suas entregas fiquem corretamente associadas ao seu perfil:
+   ```bash
+   git config --global user.name "Seu Nome Completo"
+   git config --global user.email "seu-email-cadastrado-no-github@exemplo.com"
+   ```
+
+---
+
 ## 📋 Passo a Passo Detalhado
 
 ### Passo 1: Criar o seu Fork no GitHub
