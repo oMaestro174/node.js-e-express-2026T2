@@ -1,46 +1,48 @@
-# 🚀 Guia Prático: Como Enviar suas Atividades via Fork e Pull Request no GitHub
+# 🚀 Guia Prático: Como Entregar Atividades via Fork e Pull Request
 > **Instituto de Tecnologia e Aprendizado Moderno — ITEAM**  
+> **Curso:** Node.js e Express (Backend) — Turma 2026T2  
 > **Instrutor:** Professor ITEAM  
-> **Objetivo:** Ensinar o fluxo profissional de contribuição no GitHub para que seu nome e trabalho fiquem oficialmente registrados no histórico da turma!
+> **Repositório da Turma:** `https://github.com/oMaestro174/node.js-e-express-2026T2`
 
 ---
 
-## 🎯 Por que usamos Fork e Pull Request?
+## 🎯 Por que usamos Fork e Pull Request no curso de Node.js?
 
-No mercado profissional de tecnologia e nas maiores empresas de software do mundo, desenvolvedores **não enviam arquivos por e-mail ou pendrive**, e nem sobem alterações direto na branch principal de um projeto compartilhado.
+No mercado profissional de backend e nas empresas que desenvolvem APIs em Node.js, desenvolvedores **não enviam arquivos por e-mail, zip ou pendrive**, e nem sobem código direto na branch principal de um repositório compartilhado.
 
 Adotamos o fluxo de **Fork & Pull Request (PR)** porque:
-1. 🌟 **Seu Portfólio Ganha Destaque:** Sua foto e seu perfil do GitHub ficam registrados permanentemente na aba **Contributors** do repositório da instituição.
-2. 🛡️ **Segurança e Autonomia:** Você trabalha em uma cópia própria e segura do projeto, sem risco de sobrescrever o trabalho de outros colegas.
-3. 💬 **Feedback Direto:** O professor pode revisar suas linhas de código, fazer elogios e apontar melhorias diretamente na interface do GitHub!
+1. 🌟 **Seu Portfólio de Backend Ganha Vida:** Seu perfil do GitHub e seus commits ficam registrados permanentemente na aba **Contributors** do repositório da turma.
+2. 🛡️ **Autonomia para sua API:** Você desenvolve seu código em uma cópia própria e segura do projeto, sem perigo de conflitos com os servidores de outros colegas.
+3. 💬 **Code Review Profissional:** O professor revisa sua arquitetura de rotas, middlewares e controllers diretamente na interface do GitHub, deixando feedbacks linha por linha.
 
 ---
 
-## 🗺️ O Mapa do Fluxo de Trabalho
+## 🗺️ O Mapa do Fluxo de Trabalho (Backend)
 
 ```text
-[Repositório da Turma (ITEAM)]
+[Repositório da Turma (Node.js 2026T2)]
          │
          │  1. Clicar em "Fork" (Gera uma cópia na sua conta)
          ▼
-[Seu Fork Pessoal no GitHub] (github.com/SEU-USUARIO/...)
+[Seu Fork Pessoal no GitHub] (github.com/SEU-USUARIO/node.js-e-express-2026T2)
          │
          │  2. git clone (Baixa para seu computador)
          ▼
 [Seu Computador / VS Code]
          │
-         ├── 3. git checkout -b minha-entrega
-         ├── 4. Desenvolver o código e salvar na sua pasta
-         ├── 5. git add .
-         └── 6. git commit -m "feat: entrega da atividade"
+         ├── 3. git checkout -b entrega-a1-seunome
+         ├── 4. Criar sua pasta em Atividades-A1/Turno/Seu-Nome/
+         ├── 5. Desenvolver sua API (server.js, package.json)
+         ├── 6. git add .
+         └── 7. git commit -m "feat(api): entrega do projeto A1"
          │
-         │  7. git push origin minha-entrega
+         │  8. git push origin entrega-a1-seunome
          ▼
 [Seu Fork Pessoal no GitHub]
          │
-         │  8. "Compare & pull request" (Envia o pedido de entrega)
+         │  9. "Compare & pull request" (Envia a entrega para o professor)
          ▼
-[Repositório da Turma (ITEAM)] ➔ ✅ Trabalho Entregue e Registrado!
+[Repositório da Turma (Node.js 2026T2)] ➔ ✅ API Entregue e Registrada!
 ```
 
 ---
@@ -48,35 +50,33 @@ Adotamos o fluxo de **Fork & Pull Request (PR)** porque:
 ## 📋 Passo a Passo Detalhado
 
 ### Passo 1: Criar o seu Fork no GitHub
-1. Abra o navegador e acesse a página do repositório oficial da sua turma:
-   * **Node.js e Express:** `https://github.com/oMaestro174/node.js-e-express-2026T2`
-   * **Fundamentos Web:** `https://github.com/oMaestro174/fundamentos-de-desenvolvimento-web-2026T1`
+1. Acesse o repositório oficial da nossa turma:  
+   👉 `https://github.com/oMaestro174/node.js-e-express-2026T2`
 2. No canto superior direito da página, clique no botão **Fork** (ícone de bifurcação):
    > ![Botão Fork](https://docs.github.com/assets/cb-32435/images/help/repository/fork-button.png)
 3. Na tela de confirmação:
    * **Owner:** Selecione sua conta pessoal do GitHub.
-   * **Repository name:** Mantenha o mesmo nome sugerido.
-   * **Copy the main branch only:** Pode deixar marcado.
+   * **Repository name:** Mantenha `node.js-e-express-2026T2`.
+   * **Copy the main branch only:** Mantenha marcado.
 4. Clique no botão verde **Create fork**.
-5. *Pronto!* Agora você está na sua própria cópia do projeto (observe que a URL agora mostra `github.com/SEU-USUARIO/...`).
+5. *Pronto!* Agora você está na sua cópia pessoal do repositório (repare que a URL agora é `github.com/SEU-USUARIO/node.js-e-express-2026T2`).
 
 ---
 
 ### Passo 2: Clonar o seu Fork para o seu Computador
-> ⚠️ **Atenção Máxima:** Não clone o repositório do professor! Clone o link do **seu fork** (onde aparece seu nome de usuário).
+> ⚠️ **Atenção Máxima:** Não clone o repositório do professor! Clone a URL do **seu fork** (onde aparece o seu nome de usuário).
 
 1. Na página do seu fork, clique no botão verde **<> Code**.
-2. Copie a URL HTTPS (exemplo: `https://github.com/SEU-USUARIO/nome-do-repositorio.git`).
-3. Abra o terminal (Git Bash, PowerShell ou Terminal do VS Code) em uma pasta de sua preferência (ex: `C:\Projetos` ou `~/Projetos`).
-4. Execute o comando:
+2. Copie a URL HTTPS (exemplo: `https://github.com/SEU-USUARIO/node.js-e-express-2026T2.git`).
+3. Abra o terminal (PowerShell, Git Bash ou terminal do VS Code) na sua pasta de projetos e digite:
    ```bash
-   git clone https://github.com/SEU-USUARIO/nome-do-repositorio.git
+   git clone https://github.com/SEU-USUARIO/node.js-e-express-2026T2.git
    ```
-5. Entre na pasta clonada:
+4. Entre na pasta clonada:
    ```bash
-   cd nome-do-repositorio
+   cd node.js-e-express-2026T2
    ```
-6. Abra o projeto no VS Code:
+5. Abra no VS Code:
    ```bash
    code .
    ```
@@ -84,7 +84,7 @@ Adotamos o fluxo de **Fork & Pull Request (PR)** porque:
 ---
 
 ### Passo 3: Criar uma Branch com o seu Nome
-Nunca faça alterações diretamente na branch `main`. Crie uma branch de trabalho específica para a sua entrega:
+Nunca faça alterações diretamente na branch `main`. Crie uma branch de trabalho para a sua entrega:
 
 ```bash
 git checkout -b entrega-a1-seu-nome-sobrenome
@@ -94,38 +94,38 @@ git checkout -b entrega-a1-seu-nome-sobrenome
 ---
 
 ### Passo 4: Adicionar o seu Trabalho na Estrutura Correta
-Cada disciplina possui uma convenção de pastas para evitar conflito de arquivos entre os colegas:
+Para mantermos o repositório limpo e organizado entre todos os colegas:
 
-#### No Curso de Node.js:
-1. Acesse a pasta `Atividades-A1/`.
-2. Entre na pasta do seu turno: `Vespertino` ou `Noturno`.
-3. Crie uma pasta com o seu **Nome Completo** (ex: `Lucas-Silva/`).
-4. Coloque seus arquivos dentro desta pasta (`server.js`, `package.json`, `README.md`, etc.).
-> 🚫 **Importante:** NUNCA envie a pasta `node_modules`. Garanta que exista um arquivo `.gitignore` com a linha `node_modules/`.
+1. Acesse a pasta **`Atividades-A1/`**.
+2. Entre na pasta do seu turno: **`Vespertino/`** ou **`Noturno/`**.
+3. Crie uma subpasta com o seu **Nome Completo** (ex: `Atividades-A1/Vespertino/Lucas-Silva/`).
+4. Coloque seus arquivos da API dentro dessa pasta:
+   * `server.js` (ou `app.js`)
+   * `package.json`
+   * `README.md` (com instruções de como rodar sua API e exemplos de endpoints)
 
-#### No Curso de Fundamentos Web:
-1. Acesse a pasta `Avaliacoes/` (ou a pasta indicada no enunciado da atividade).
-2. Dentro de `A1/` (ou `A2/`, `A3/`), crie a pasta do seu turno e nome: `Vespertino/Lucas-Silva/`.
-3. Coloque seus arquivos HTML, CSS e imagens nessa pasta.
+> 🚫 **REGRA DE OURO DO NODE.JS:**  
+> **NUNCA suba a pasta `node_modules` para o GitHub!** Ela contém milhares de arquivos pesados que não devem ser versionados.  
+> Certifique-se de que a pasta `node_modules/` esteja listada no `.gitignore`. Quando o professor ou qualquer desenvolvedor for testar seu código, basta rodar `npm install`.
 
 ---
 
 ### Passo 5: Salvar, Commitar e Enviar para o GitHub
-Depois de testar seu código e ter certeza de que tudo está funcionando:
+Depois de testar sua API (usando o Postman, Insomnia ou navegador) e garantir que as rotas estão respondendo corretamente:
 
-1. Verifique os arquivos modificados:
+1. Verifique os arquivos modificados no terminal:
    ```bash
    git status
    ```
-2. Adicione todos os seus arquivos:
+2. Adicione os arquivos:
    ```bash
    git add .
    ```
-3. Grave o seu commit com uma mensagem clara e profissional:
+3. Grave o seu commit:
    ```bash
-   git commit -m "feat(entrega): adiciona projeto A1 do aluno Lucas Silva"
+   git commit -m "feat(a1): entrega da API do aluno Lucas Silva"
    ```
-4. Envie a sua branch para o seu Fork no GitHub:
+4. Envie sua branch para o seu Fork:
    ```bash
    git push origin entrega-a1-seu-nome-sobrenome
    ```
@@ -133,54 +133,43 @@ Depois de testar seu código e ter certeza de que tudo está funcionando:
 ---
 
 ### Passo 6: Abrir o Pull Request (A Entrega Oficial!)
-1. Volte ao seu navegador e acesse a página do seu fork no GitHub.
-2. Você verá um aviso amarelo no topo com o botão verde: **Compare & pull request**. Clique nele!
-   > *Se o banner não aparecer, vá na aba **Pull requests** e clique no botão verde **New pull request**.*
+1. Volte ao seu navegador na página do seu fork no GitHub.
+2. Você verá um banner amarelo no topo com o botão verde: **Compare & pull request**. Clique nele!
 3. Na tela de abertura do Pull Request:
-   * **Base repository:** Repositório da turma (`oMaestro174/...`) | **base:** `main`.
-   * **Head repository:** Seu fork (`SEU-USUARIO/...`) | **compare:** `entrega-a1-seu-nome-sobrenome`.
-4. **Título do PR:** Preencha de forma clara:
+   * **Base repository:** `oMaestro174/node.js-e-express-2026T2` | **base:** `main`.
+   * **Head repository:** `SEU-USUARIO/node.js-e-express-2026T2` | **compare:** `entrega-a1-seu-nome-sobrenome`.
+4. **Título do PR:** Preencha no padrão oficial da turma:
    * `[Entrega A1] - Nome Completo - Turno`  
    * *Exemplo:* `[Entrega A1] - Lucas Silva - Vespertino`
-5. **Descrição do PR:** Escreva um breve resumo do que você fez:
+5. **Descrição do PR:** Escreva um resumo da sua API:
    ```markdown
-   ### Entrega da Avaliação A1
+   ### Entrega da Avaliação A1 (Node.js & Express)
    - **Aluno:** Lucas Silva
    - **Turno:** Vespertino
-   - **Desafio Escolhido:** Nível Avançado (API com Validação e Filtros)
-   - **O que foi implementado:**
-     - Rotas de listagem, cadastro e busca por ID.
-     - Middleware de validação dos campos obrigatórios.
-     - Tratamento amigável de erros HTTP.
+   - **Nível do Desafio:** Avançado
+   - **Endpoints Desenvolvidos:**
+     - `GET /produtos` (Listagem com filtros)
+     - `POST /produtos` (Cadastro com validação)
+     - `PUT /produtos/:id` (Atualização)
+     - `DELETE /produtos/:id` (Remoção)
+   - **Middlewares:** Logger de requisições e validação de body JSON.
    ```
 6. Clique no botão verde **Create pull request**!
 
-🎉 **Parabéns! Sua entrega está oficialmente registrada!**  
-O professor receberá uma notificação, avaliará seu código e poderá aprovar o *merge* para incorporar sua entrega ao histórico oficial da turma.
+🎉 **Pronto! Sua API está oficialmente entregue!**  
+O professor receberá a notificação, avaliará o seu código no GitHub e fará o merge para registrar sua nota.
 
 ---
 
-## 🔄 Como Manter seu Fork Atualizado (Dica de Ouro)
+## 🔄 Como Atualizar seu Fork com Novas Aulas do Curso
 
-Quando o professor disponibilizar novos materiais ou aulas no repositório da turma, você pode atualizar seu fork com apenas um clique:
+Conforme o professor for adicionando novas aulas no repositório da turma:
 
-1. Entre na página inicial do **seu fork** no GitHub.
-2. Logo abaixo dos botões verdes, clique no botão **Sync fork**.
+1. Acesse a página do **seu fork** no GitHub.
+2. Clique no botão **Sync fork** (abaixo dos botões verdes).
 3. Clique em **Update branch**.
-4. No seu computador, volte para a branch `main` e puxe as atualizações:
+4. No seu computador, volte para a `main` e puxe as atualizações:
    ```bash
    git checkout main
    git pull origin main
    ```
-Pronto! Seu computador estará 100% sincronizado com o repositório do professor!
-
----
-
-## 🆘 Dúvidas Frequentes & Erros Comuns
-
-* **"Professor, clonei o repositório do senhor e quando dou `git push` pede permissão de escrita e dá erro 403!"**  
-  👉 *Causa:* Você clonou o repositório da turma (`oMaestro174`) em vez do seu fork pessoal.  
-  👉 *Solução:* Acesse seu fork pessoal, copie a URL com seu nome de usuário e rode `git remote set-url origin https://github.com/SEU-USUARIO/nome-do-repo.git`.
-
-* **"Esqueci de colocar um arquivo e já abri o Pull Request. Preciso fechar o PR e abrir outro?"**  
-  👉 *Não!* O GitHub é inteligente: basta fazer as alterações na sua máquina, rodar `git add .`, `git commit -m "fix: ajuste no arquivo"` e `git push origin sua-branch`. O Pull Request que já está aberto será atualizado automaticamente!
